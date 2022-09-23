@@ -7,10 +7,15 @@
     <title>Mídias em html</title>
 </head>
 <body>
-    <h1>Imagens dinamica</h1>
+    <h1>Imagem dinamica</h1>
+    <p>
+        Tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.
+    </p>
     <picture>
-        <source media="(max-width: 800px)" srcset="imagens/paisagem-p.png" type="image/png">
-        <img src="midias/paisagem-g.png" alt="imagem flexivel">
+        <source media="(max-width: 750px)" srcset="imagem/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagem/foto-m.png" type="image/png">
+        <img src="imagem/foto-g.png" alt="imagem flexivel">
+    
     </picture>
     
 </body>
