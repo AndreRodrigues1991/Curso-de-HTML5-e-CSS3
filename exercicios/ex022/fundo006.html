@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fundo 006</title>
+    <title>Fundo Fixo de Tela</title>
     <style>
         body {
             height: 100vh;
@@ -13,11 +13,21 @@
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: fixed;
+            
+            /*Shorthand + backgrownd
+              color > image > position > repeat > size > attachment
+              */
+
+              background: black url('imagens/wallpaper002.jpg') center center no-repeat cover fixed;
         }
 
+        
+
         main {
+            
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -30,10 +40,32 @@
 <body>
     <main>
         <h1>Teste de imagem de Fundo</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, id ab est dolores praesentium et porro accusantium tenetur soluta eius sit nesciunt molestiae odit pariatur harum obcaecati exercitationem aliquid itaque. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error debitis alias quas eligendi, deleniti minima cupiditate. Qui, at eligendi non reiciendis aliquid ab harum doloribus saepe earum voluptatibus cum cumque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis saepe numquam asperiores ipsam esse expedita molestiae dolore enim laudantium. Explicabo expedita ab totam quia at consectetur placeat porro dolore ad.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, id ab est dolores praesentium et porro accusantium tenetur soluta eius sit nesciunt molestiae odit pariatur harum obcaecati exercitationem aliquid itaque.</p>
+        
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error debitis alias quas eligendi, deleniti minima cupiditate. Qui, at eligendi non reiciendis aliquid ab harum doloribus saepe earum voluptatibus cum cumque.</p>
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis saepe numquam asperiores ipsam esse expedita molestiae dolore enim laudantium. Explicabo expedita ab totam quia at consectetur placeat porro dolore ad.</p>
+        
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo, porro totam! Quasi laudantium in quidem sit harum impedit, corporis voluptatum mollitia nisi rem a tenetur nesciunt sequi temporibus atque assumenda.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta recusandae reprehenderit, eos minima saepe incidunt beatae enim laudantium temporibus quibusdam itaque? Quidem, ducimus. Voluptatem, nobis dolorem unde consectetur autem alias!</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam corrupti commodi, optio veritatis debitis aliquam saepe architecto a ex! Veniam illum nihil temporibus reprehenderit aliquam similique voluptatum in aliquid. Eaque!</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, dolorem esse deleniti dolore cum velit accusamus totam laborum labore provident quidem unde repudiandae illum, natus inventore iure quae veniam temporibus.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae exercitationem at illum, dolorum, amet nisi beatae molestias veritatis repudiandae id rerum itaque. Sequi exercitationem, doloribus tempora provident soluta officia nemo.</p>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum accusantium minima quae ipsum non libero? Adipisci quis, temporibus repellendus iste suscipit, provident eum minima quam, distinctio enim consectetur voluptatem tempore.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sit ipsum fugit nulla, labore non ab sint illo magnam temporibus qui laboriosam aspernatur molestias corporis tempora, cupiditate atque! Odit, aspernatur!</p>
     </main>
     
 </body>
 </html>
 
 <!--background-size: cover; = vai fazer cortes na imagem mas vai preencher a tela inteira ele nao exibe 100% da imagem mas ocupa 100% da ViewPort a (tela do computador)-->
+
+<!--background-attachment: fixed; para rolar a tela ee ficar com o fundo fixado-->
+
+<!--background-attachment: scrool rolar = o fundo vai rolar junto com o nosso conteudo-->
