@@ -12,6 +12,16 @@
 
         table {
             width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            border: 1px solid black;
+            background-color: gray;
+            
         }
 
         td, th {
@@ -34,9 +44,23 @@
         }
 
         thead, tfoot {
-            background-color: gray;
+            background-color: #383838;
             color: white;
+            text-align: right;
         }
+
+        thead > tr > th {
+            text-align: center;
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: white;
+            font-weight: bold;
+        }
+
+        
+        tbody > tr:nth-child(even) {
+            background-color: lightgray;
 
     </style>
 </head>
@@ -44,6 +68,7 @@
     <h1>Uso de Tabelas Grandes</h1>
     <!--Anatomia para tabelas grandes
         TABLE
+            CAPTION = LEGENDA
             THEAD
                 TR, TD, TH
             TBODY
@@ -52,11 +77,12 @@
                 TR, TD, TH
             -->
     <table>
+        <CAption>População das unidades federativas</CAption>
         <thead>
             <tr>
                 <th class="posição">Posição</th>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col"> Estado</th>
+                <th scope="col">População</th>
             </tr>
 
         </thead>
@@ -203,8 +229,8 @@
 
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
-                <td><strong>190.755.799</strong>
+                <th scope="row">Total de Habitantes</th>
+                <td ><strong>190.755.799</strong>
                 </td>
             </tr>
 
@@ -214,3 +240,24 @@
     
 </body>
 </html>
+
+<!--scope="col" = o titulo está na mesma coluna dos atributos pra dizer pro navegador-->
+
+<!--scope="row" = o titulo esta na mesma linha do atributo-->
+
+<!--tbody > tr:nth-child(2n) {
+            background-color: lightgray; = todo tr que vier dentro de tbody vai ficar sinza / ():pseudo class) 2n de duas em duas ela vai colocando uma tarja cinza-->
+
+ 
+<!--tbody > tr:nth-child(odd) {
+            background-color: lightgray; = todo tr que vier dentro de tbody vai ficar sinza / ():pseudo class) odd impar faz as celulas impar de duas em duas ela vai colocando uma tarja cinza-->
+            
+ <!--tbody > tr:nth-child(odd) {
+            background-color: white;
+            font-weight: bold;
+        }
+
+        
+        tbody > tr:nth-child(even) {
+            background-color: lightgray;
+ posso fazer qualquer coisa dentro do impar ou par-->           
