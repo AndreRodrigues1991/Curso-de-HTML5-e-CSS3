@@ -16,6 +16,12 @@
             
         }
 
+        caption {
+            font-size: 1.4em;
+            font-weight: bold;
+            padding: 10px;
+        }
+
         tbody, tr, th, td {
             border: 1px solid black;
             padding: 25px;
@@ -24,6 +30,11 @@
 
         th.exata {
             text-align: left;
+        }
+
+        th.humanas {
+            text-align: left;
+            
         }
             
         
@@ -38,16 +49,16 @@
 
         <thead>
             <tr>
-                <th>Área</th>
-                <th>Diciplinas</th>
-                <th>Notas Nota 1 Nota 2</th>
-                <th>Média</th>
+                <th scope="colgroup">Área</th>
+                <th scope="colgroup">Diciplinas</th>
+                <th scope="colgroup">Notas Nota 1 Nota 2</th>
+                <th scope="colgroup">Média</th>
             </tr>
         </thead>
 
         <tbody>
             <tr>
-                <th rowspan="4">Exatas</th>
+                <th rowspan="4" scope="col">Exatas</th>
                 <td>Matemática</td>
                 <td>00 00</td>
                 <td>00</td>
@@ -68,11 +79,26 @@
                 <td>00</td>
             </tr>
             <tr>
-                <th colspan="3" class="exata">Médias de Exatas</th>
+                <th colspan="3" class="exata" scope="row">Médias de Exatas</th>
+                <td>00</td>
+            </tr>
+            <tr>
+                <th scope="row">Humanas</th>
+                <td>História</td>
+                <td>00</td>
+                <td>00</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td>00</td>
+                <td>00</td>
+                <td>00</td>
+            </tr>
+            <tr>
+                <th colspan="3" class="humanas" scope="row">Média de Humanas</th>
                 <td>00</td>
             </tr>
         </tbody>
-
 
 
 
