@@ -1,3 +1,10 @@
 @charset "UTF-8";
 
 /*aparelho deitado (landscape)*/
+
+body {
+    background-image: url(../imagens/cev-landscape.jpg);
+    background-position: left bottom;
+}
+
+/*é o mesmo media type que é o screen só que configurações de midia feturi diferentes*/
