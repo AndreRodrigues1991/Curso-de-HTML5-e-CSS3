@@ -2,6 +2,54 @@
 
 /*Todas as demais mídias*/
 
-@media print {
+/*Typical device Breakpoints
+Pequenas telas: até 600px
+Celular: de 600px até 768
+Tablet: 768 até 992px
+Desktop: 992px até 1200px
+Grandes Telas: acima de 1200px
+*/
+
+@media print { /*Impresssoras*/
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) { /*Tabletes*/
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    } /*Quando eu aumentar a tela vai aparecer o tablet*/
+
+    img#phone { display: none;} /*para esconder o Telefone*/
+    img#tablet { display: block;} /*para aparecer o tablet quando aumentar a tela segundo a configuração de tabletes no @media screen*/
+    img#print { display: none;}
+    img#pc { display: none;}
+    img#tv { display: none;}
+}
+
+
+
+@media screen and (min-width: 992px) and (max-width: 1200px) { /*Desktop*/
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    img#phone { display: none;} /*para esconder o Telefone*/
+    img#tablet { display: none;}
+    img#print { display: none;}
+    img#pc { display: block;}
+    img#tv { display: none;}
+    
+}
+
+@media screen and (min-width: 1200px) { /*Grandes Telas*/
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    img#phone { display: none;} /*para esconder o Telefone*/
+    img#tablet { display: none;}
+    img#print { display: none;}
+    img#pc { display: none;}
+    img#tv { display: block;}
     
 }
