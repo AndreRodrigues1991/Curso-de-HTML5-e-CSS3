@@ -10,7 +10,37 @@ Desktop: 992px até 1200px
 Grandes Telas: acima de 1200px
 */
 
-@media print { /*Impresssoras*/
+@media print { /*Impressão*/
+
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+
+    body {
+        background-image: url(../imagens/back-print.jpg); /*desnecessario pq no papel não imprime*/
+    }
+
+    main {
+        width: 90vw; /*90% da largura do papél*/
+        border: 2px solid black;
+    }
+
+    main::after { /*dpois do main eu vou querer um texto um content: */
+        content: 'Essa impressão foi feita através do site www.cursoemvideo.com';
+        text-decoration: overline;
+    }
+
+    main h1 {
+        text-shadow: none;
+        color: black; /*Eu quero que na hora que eu imprimir meu h1 que está dentro do main fique com a cor preta*/
+    }
+
+    img#phone { display: none;} /*para esconder o Telefone*/
+    img#tablet { display: none;}
+    img#print { display: block;}
+    img#pc { display: none;}
+    img#tv { display: none;}
     
 }
 
