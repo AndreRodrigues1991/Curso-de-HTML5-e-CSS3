@@ -1,5 +1,63 @@
 @charset "UTF-8";
 
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
 body, html {
     background-color: lightgrey;
 }
+
+header {
+    background-color: gray;
+}
+
+header > h1 {
+    padding: 10px;
+    text-align: center;
+}
+
+menu {
+    display: block;
+}
+
+menu > ul {
+    list-style: none; /*pra tirar as bolinhas do lado da lista*/
+}
+
+menu > ul > li > a { /*O link que está dentro da lista que está dentro do menu*/
+    display: block;
+    padding: 10px;
+    text-decoration: none; /*tirar o sublinhado*/
+    text-align: center; /*Centralizar*/
+    background-color: rgb(87, 87, 87);
+    color: white;
+    border-top: solid gray; /*Bordas só em cima*/
+}
+
+menu > ul > li > a:hover { /*Passar o mouse por cima fica gray*/
+    background-color: gray;
+}
+
+main {
+    width: 90vw; /*Largura da tela*/
+    background-color: white;
+    margin: auto; /*Centralizar o main*/
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+article > h2 {
+    padding-bottom: 20px;
+}
+
+article > p {
+    text-align: justify;
+    padding-bottom: 20px;
+    text-indent: 20px; /*da um espaço no inicio de cada parágrafo*/
+}
+
+/*Menu pronto Layout (Versão para Celular)*/
