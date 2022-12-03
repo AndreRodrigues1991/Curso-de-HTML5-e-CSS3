@@ -23,6 +23,11 @@ Grandes Telas: acima de 1200px
         /*os itens que estao dentro da lista que estão dentro do menu = botar um do lado do outro ao inves de 1 em baixo do outro*/
     }
     
+
+    main {
+        width: 768px;
+    }
+    
 }
 
 /*@media screen and (min-width: 768px) { Telas pequenas até o celular vai mostrar o menu 'hamburguinho' de 768px pra cima vai mostrar o menu normal vou criar essas duas possibilídades*/

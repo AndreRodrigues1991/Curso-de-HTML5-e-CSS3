@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body onresize="mudoutamanho()"> <!--Quandpo eu mudar o tamanho do site-->
+<body onresize="mudoutamanho()"> <!--Quando eu mudar o tamanho do site-->
     <header>
         <h1>Meu Site</h1>
         <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
@@ -35,7 +35,13 @@
         </article>
     </main>
     <script>
-        function
+        function mudoutamanho() {
+            if (window.innerwidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
 
 
         function clickMenu() {
@@ -53,3 +59,11 @@
 
 <!--<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> = copiei esse limk mo google icons pra pegar o menu hamburguer...+ <h1>Meu Site</h1>
         <i class="material-icons">menu</i> pra colocar o menu tem q colocar no header em baixo do h1-->
+
+<!-- <script>
+        function mudoutamanho() {
+            if (window.innerwidth >= 768) {
+                itens.style.display = 'block'
+            }
+        }
+ = Se a largura da minha tela for maior ou igual a 768 eu vou mandar mostrar em bloco se não none-->        
