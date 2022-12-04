@@ -4,7 +4,7 @@
 
 body {
     background-image: url(../imagens/cev-landscape.jpg);
-    background-position: left bottom;
+    background-position: left bottom; /*a imagem vai ficar grudada na parte esquerda em baixo*/
 }
 
 /*é o mesmo media type que é o screen só que configurações de midia feturi diferentes*/
