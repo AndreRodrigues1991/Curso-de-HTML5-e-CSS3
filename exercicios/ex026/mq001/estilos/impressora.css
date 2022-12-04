@@ -8,19 +8,21 @@
    }
 
    html {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1.5em;
-    line-height: 1.5em;
+    font-family: 'Courier New', Courier, monospace; 
+    font-size: 1.1em;
+    line-height: 1.2em; /*Espaçamento entre linhas*/
    }
 
    menu {
-    display: none;
+    display: none; /*Não vai ser exibido na impressora */
    }
 
    article {
-    width: 100%;
+    width: 100%; /*vai ocupar a largura toda do papel na impressora*/
    }
 
    article::after {  /*Depois do artigo*/
     content: 'Esse artigo foi impresso através do site www.cursoemvideo.com';
    }
+
+   /*font-family: 'Courier New', Courier, monospace; essa fonte é muito fácil de se ler no papel*/
