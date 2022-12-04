@@ -14,6 +14,10 @@ Grandes Telas: acima de 1200px
         display: none; /*hamburguinho sumiu*/
     }
 
+    /* #itens {
+        display: block !important;
+    } */
+
     menu {
         display: block;
     }
