@@ -8,6 +8,7 @@ Celular: de 600px até 768
 Tablet: 768 até 992px
 Desktop: 992px até 1200px
 Grandes Telas: acima de 1200px
+pesquisar pra saber se esses valores ainda são os mesmos no dia de hoje
 */
 
 @media print { /*Impressão*/
@@ -44,7 +45,7 @@ Grandes Telas: acima de 1200px
     
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) { /*Tabletes*/
+@media screen and (min-width: 768px) and (max-width: 992px) { /*Tabletes media fetures*/
     body {
         background-image: url(../imagens/back-tablet.jpg);
     } /*Quando eu aumentar a tela vai aparecer o tablet*/
